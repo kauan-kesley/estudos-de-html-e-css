@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pseudo-elementos</title>
+    
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 22px;
+        }
+
+        a{
+            color: black;
+            text-decoration: none;
+        }
+
+        a:visited{
+            color: rgb(77, 158, 158);
+        }
+
+        a:hover{
+            color: rgb(238, 255, 0);
+        }
+
+        a:active{
+            color: rgb(226, 94, 0);
+        }
+
+        a::before{
+            content: '=> ';
+            color: blueviolet;
+        }
+    
+    </style>
+</head>
+<body>
+    <h1>links abaixo</h1>
+
+    <a href="https://www.estudonauta.com/" target="_blank">Acesse a plataforma EstudoNalta <br></a>
+    <a href="https://www.cursoemvideo.com/" target="_blank">Acesse a plataforma Curso em video tar</a>
+
+</body>
+</html>

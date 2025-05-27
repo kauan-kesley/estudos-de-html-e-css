@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>imagem dinâmica</title>
+</head>
+<body>
+    <h1>Colocando imagem dinâmica</h1>
+
+    <p>tente aumentar ou diminuir o tamanho do navegador</p>
+
+    <picture><source media="(max-width: 450px)" srcset="imagem/g.png" type="image/png">
+        <source media="(max-width: 750px)" srcset="imagem/m.png" type="image/png">
+        <img src="imagem/g.png" alt="">
+    </picture>
+
+    <h1>Reproduzindo audio mp3</h1>
+
+    <audio src="midia/rap.mp3" controls></audio>
+    
+    <audio preload="metadata" controls>
+        <source src="midia/rap.mp3" type="audio/mp3">
+    </audio>
+
+    <h1>Colocando videos no seu proprio servidor </h1>
+    <video src="midia/v1.mp4" controls width="500"></video><hr>
+
+    <video width="500" controls>
+        <source src="midia/v1.mp4" type="video/mp4">
+    </video>
+</body>
+</html>
+
+
