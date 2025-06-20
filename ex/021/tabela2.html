@@ -6,15 +6,37 @@
     <title>tabelas grandes em css</title>
 
     <style>
+        body{
+            background-color: rgba(0, 0, 0, 0.144);
+        }
+        caption{
+            font-size: 50px;
+            background-color: rgb(100, 94, 97);
+            font-weight: bold;
+            color: rgb(255, 255, 255);
+            padding: 29px;
+        }
+
+        table{
+            max-height: 800px;
+            font-size: 30px;
+            border-collapse: collapse;
+            margin: auto;
+        }
+
         thead, tfoot{
             background-color: black;
             color: rgb(255, 255, 255);
         }
-        table{
-            width: 800px;
-            font-size: 30px;
-            border-collapse: collapse;
+
+        tbody > tr:nth-child(odd) {
+        background-color: rgb(255, 0, 0);
         }
+
+        tbody > tr:nth-child(even) {
+            background-color: rgb(238, 255, 0);
+        }
+        
         th, td{
             border: 2px solid black;
             padding: 10px;
@@ -27,12 +49,12 @@
     </style>
 </head>
 <body>
-    <h1>Tabela em css usando tags semânticas</h1>
     <table>
+        <caption>População das unidades federais</caption>
         <thead>
             <tr>
-                <th>ESTADOS</th>
-                <th>POPULACÃO</th>
+                <th scope="col">ESTADOS</th>
+                <th scope="col">POPULACÃO</th>
             </tr>
         </thead>
         <tbody>
@@ -80,7 +102,7 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>SOMA DOS ESTADOS</th>
+                <th scope="row">SOMA DOS ESTADOS</th>
                 <td class="num">000</td>
             </tr>
         </tfoot>
